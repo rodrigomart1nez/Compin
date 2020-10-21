@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.svg {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: #f7f7f7;
+    overflow: visible;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+  svg rect.selection {
+    stroke: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  #root {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 50px;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  
+  button {
+    display:inline-block;
   }
+
+  .label {
+    display:inline-block;
+  }
+
+  .labelp {
+    display:inline;
+  }
+
+  #container{
+    text-align: center;
+  }
+  
+  video {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+  }
+  
+.fields {
+  margin-bottom: 1rem;
+  float: left;
+  margin-top: 2rem;
 }
+p {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin-right: 5%;
+}
+  
+  .field {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+  
+  .field input {
+    margin-right: 0.5em;
+  }
